@@ -9,6 +9,11 @@
     <script src="main.js"></script>
 </head>
 <body>
-    
+    <h1>Login</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ frm.as_p }}
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
