@@ -54,7 +54,7 @@ def LoginForm(request):
             return redirect('/')
     else:
         form = UserCreationForm()
-    return render (request, 'login.html', {'form':form})
+    return render (request, 'Treasures/login.html', {'form':form})
 
 
 def LogoutForm(request):
